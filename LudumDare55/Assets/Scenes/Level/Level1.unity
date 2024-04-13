@@ -8066,6 +8066,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1591713638 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6998358883570919394, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
+  m_PrefabInstance: {fileID: 1763961740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1591713643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591713638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b579f1b16ca50254192a19fef40b0001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxCharges: 3
+  currentCharges: 3
+  tileToPlace: {fileID: 11400000, guid: 126abc7ecd7148849b20686f210a83a3, type: 2}
 --- !u!1001 &1763961740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8074,6 +8094,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 840228575}
     m_Modifications:
+    - target: {fileID: 274077482893663568, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
+      propertyPath: tileToPlace
+      value: 
+      objectReference: {fileID: 11400000, guid: 126abc7ecd7148849b20686f210a83a3, type: 2}
     - target: {fileID: 794969338679255215, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -8373,7 +8397,7 @@ PrefabInstance:
       addedObject: {fileID: 611092865}
     - targetCorrespondingSourceObject: {fileID: 1115399210672788337, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 611092864}
+      addedObject: {fileID: 1591713643}
   m_SourcePrefab: {fileID: 100100000, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
 --- !u!1 &2008040334 stripped
 GameObject:
