@@ -299,5 +299,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 560c24f9d8d825e4885c7d719b8d42dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxCharges: 1
-  CurrentCharges: 1
+  customCursorTexture: {fileID: 10912, guid: 0000000000000000f000000000000000, type: 0}
+  maxCharges: 1
+  currentCharges: 1
