@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D _rigidbody2d;
     private Animator _animator;
     private SpriteRenderer _spriteRenderer;
-    public int groundLayerMask;
+    public LayerMask groundLayerMask;
 
     private Vector2 _velocity = new Vector2(0f, 0f);
     public float velocityX = 0.1f;
@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         var position = gameObject.transform.position;
-        var hit = Physics2D.Raycast(position, Vector2.down, 0.1f, groundLayerMask);
+        var hit = Physics2D.Raycast(position, Vector2.down, 1.15f, groundLayerMask);
         isGrounded = hit.collider != null;
 
         if (Input.GetKeyDown("d"))

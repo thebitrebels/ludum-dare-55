@@ -50,8 +50,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd880d8efb929284386e27522bbd6e70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  groundLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
   velocityX: 0.1
-  thrust: 4
+  thrust: 6
   isGrounded: 0
 --- !u!61 &8457837641888998
 BoxCollider2D:
