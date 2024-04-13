@@ -6,9 +6,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-    public Rigidbody2D rigidBody2d;
+    private Rigidbody2D rigidBody2d;
 
-    public Vector2 velocity;
+    private Vector2 velocity = new Vector2(0f, 0f);
     public float velocityX = 0.1f;
 
     public float thrust = 1f;
