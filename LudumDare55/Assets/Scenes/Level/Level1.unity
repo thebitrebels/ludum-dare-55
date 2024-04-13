@@ -7715,6 +7715,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2674701888735360108, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -51245717, guid: 7c8425daa42b40748805c29b1bd44665, type: 3}
     - target: {fileID: 3674507824703536594, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7811,6 +7815,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5316524204049267464, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 788402795, guid: 7c8425daa42b40748805c29b1bd44665, type: 3}
     - target: {fileID: 5346851788680507817, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
       propertyPath: m_Name
       value: SummoningBook
