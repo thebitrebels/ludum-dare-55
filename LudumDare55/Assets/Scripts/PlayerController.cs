@@ -31,8 +31,11 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         var position = gameObject.transform.position;
-        var hit = Physics2D.Raycast(position, Vector2.down, 1.15f, groundLayerMask);
-        isGrounded = hit.collider != null;
+        if (_rigidbody2d.velocity.y <= 0f)
+        {
+            var hit = Physics2D.Raycast(position, Vector2.down, 1.145f, groundLayerMask);
+            isGrounded = hit.collider != null;
+        }
 
         if (Input.GetKeyDown("d"))
         {
@@ -55,6 +58,7 @@ public class PlayerController : MonoBehaviour
         if ((Input.GetKeyDown("w") || Input.GetKeyDown(KeyCode.Space)) && isGrounded)
         {
             _rigidbody2d.AddForce(transform.up * thrust, ForceMode2D.Impulse);
+            isGrounded = false;
         }
     }
 
