@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
             velocity.x += velocityX;
         }
 
-        if (Input.GetKeyDown("w") && !isGrounded)
+        if (Input.GetKeyDown("w") && isGrounded)
         {
             rigidBody2d.AddForce(transform.up * thrust, ForceMode2D.Impulse);
             isGrounded = false;
@@ -54,19 +54,19 @@ public class PlayerController : MonoBehaviour
         gameObject.transform.Translate(velocity);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         //check if the collsion is happening with a game object with "ground" tag.
-        if (collision.CompareTag("ground"))
+        if (collision.collider.CompareTag("ground"))
         {
             isGrounded = true;
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
         //check if the collsion is happening with a game object with "ground" tag.
-        if (collision.CompareTag("ground"))
+        if (collision.collider.CompareTag("ground"))
         {
             isGrounded = false;
         }
