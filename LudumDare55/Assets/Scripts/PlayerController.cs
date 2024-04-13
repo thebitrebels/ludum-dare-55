@@ -9,7 +9,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D _rigidbody2d;
     private Animator _animator;
     private SpriteRenderer _spriteRenderer;
-    
+    public int groundLayerMask;
+
     private Vector2 _velocity = new Vector2(0f, 0f);
     public float velocityX = 0.1f;
 
@@ -29,6 +30,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        var position = gameObject.transform.position;
+        var hit = Physics2D.Raycast(position, Vector2.down, 0.1f, groundLayerMask);
+        isGrounded = hit.collider != null;
+
         if (Input.GetKeyDown("d"))
         {
             _velocity.x += velocityX;
@@ -50,7 +55,6 @@ public class PlayerController : MonoBehaviour
         if ((Input.GetKeyDown("w") || Input.GetKeyDown(KeyCode.Space)) && isGrounded)
         {
             _rigidbody2d.AddForce(transform.up * thrust, ForceMode2D.Impulse);
-            isGrounded = false;
         }
     }
 
@@ -64,23 +68,5 @@ public class PlayerController : MonoBehaviour
         }
 
         gameObject.transform.Translate(_velocity);
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        //check if the collsion is happening with a game object with "ground" tag.
-        if (collision.collider.CompareTag("ground"))
-        {
-            isGrounded = true;
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        //check if the collsion is happening with a game object with "ground" tag.
-        if (collision.collider.CompareTag("ground"))
-        {
-            isGrounded = false;
-        }
     }
 }
