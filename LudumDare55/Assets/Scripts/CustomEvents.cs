@@ -1,20 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-[RequireComponent(typeof(BoxCollider2D))]
-public class Clickable : MonoBehaviour
-{
+public class CustomEvents : EventTrigger
 
-    public void OnMouseEnter()
+{
+    public override void OnPointerEnter(PointerEventData eventData)
     {
         MouseController.instance.Clickable();
     }
 
-    public void OnMouseExit()
+    public override void OnPointerExit(PointerEventData eventData)
     {
         MouseController.instance.Default();
     }
+
 }
