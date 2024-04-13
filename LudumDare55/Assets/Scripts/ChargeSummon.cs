@@ -16,12 +16,12 @@ public class ChargeSummon : MonoBehaviour, IPointerDownHandler
 
     private bool customCursorActive = false;
     public TileBase tileToPlace;
-    public Tilemap tileMap;
+    private Tilemap tileMap;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        tileMap = FindObjectOfType<Tilemap>();
     }
 
     // Update is called once per frame
@@ -29,6 +29,8 @@ public class ChargeSummon : MonoBehaviour, IPointerDownHandler
     {
         if (customCursorActive)
         {
+
+            
             // Check for right click to switch back to normal cursor
             if (Input.GetMouseButtonDown(1))
             {
