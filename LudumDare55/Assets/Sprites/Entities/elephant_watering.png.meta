@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f7a45eb2a3b645c4b99097174b8d714a
+guid: 55cef150d439d774ea71557636f9a0b4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ghost_pig_0
+      name: elephant_watering_0
       rect:
         serializedVersion: 2
         x: 4
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff1963d64c7425f4bb9df70ea1853580
-      internalID: 1936355498
+      spriteID: 18c209a11d0302f4f8f9ff4643153e95
+      internalID: 1041988595
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ghost_pig_1
+      name: elephant_watering_1
       rect:
         serializedVersion: 2
         x: 36
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1b0d2b734c46c948a9b139cb1df0ca1
-      internalID: -371828850
+      spriteID: 59933fcafaff4274a8e255f538ea8e4e
+      internalID: -930114113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ghost_pig_2
+      name: elephant_watering_2
       rect:
         serializedVersion: 2
         x: 68
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91979f3fc1ae66241b5fedda172290ef
-      internalID: -1846142251
+      spriteID: b79cc45c0cfab214c9dfa7dec176f0eb
+      internalID: 802271807
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ghost_pig_3
+      name: elephant_watering_3
       rect:
         serializedVersion: 2
         x: 100
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fddbd16640e32a41a733d17723cf73e
-      internalID: 888739576
+      spriteID: 3393a4b938048e54aa134abbc832e039
+      internalID: 1546222810
       vertices: []
       indices: 
       edges: []
@@ -204,10 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ghost_pig_0: 1936355498
-      ghost_pig_1: -371828850
-      ghost_pig_2: -1846142251
-      ghost_pig_3: 888739576
+      elephant_watering_0: 1041988595
+      elephant_watering_1: -930114113
+      elephant_watering_2: 802271807
+      elephant_watering_3: 1546222810
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

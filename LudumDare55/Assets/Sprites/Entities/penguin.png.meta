@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f7a45eb2a3b645c4b99097174b8d714a
+guid: a3763155cf557b74aa90f4b008e8ddfc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ghost_pig_0
+      name: penguin_0
       rect:
         serializedVersion: 2
         x: 4
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff1963d64c7425f4bb9df70ea1853580
-      internalID: 1936355498
+      spriteID: 5a465f8da67891a4584d222467c251b9
+      internalID: -40829196
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ghost_pig_1
+      name: penguin_1
       rect:
         serializedVersion: 2
         x: 36
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1b0d2b734c46c948a9b139cb1df0ca1
-      internalID: -371828850
+      spriteID: a0bafcb340ee26d4ebe789fa49b2fc80
+      internalID: -1513098972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ghost_pig_2
+      name: penguin_2
       rect:
         serializedVersion: 2
         x: 68
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91979f3fc1ae66241b5fedda172290ef
-      internalID: -1846142251
+      spriteID: 83d5b2fb71a7e3141bf8db1ffb2ab511
+      internalID: 1588236213
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ghost_pig_3
+      name: penguin_3
       rect:
         serializedVersion: 2
         x: 100
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fddbd16640e32a41a733d17723cf73e
-      internalID: 888739576
+      spriteID: 359c781456cc58b47a8a2741b4268d0a
+      internalID: -1078227870
       vertices: []
       indices: 
       edges: []
@@ -204,10 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ghost_pig_0: 1936355498
-      ghost_pig_1: -371828850
-      ghost_pig_2: -1846142251
-      ghost_pig_3: 888739576
+      penguin_0: -40829196
+      penguin_1: -1513098972
+      penguin_2: 1588236213
+      penguin_3: -1078227870
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

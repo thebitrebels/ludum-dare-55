@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
             _velocity.x += velocityX;
         }
 
-        if (Input.GetKeyDown("w") && isGrounded)
+        if ((Input.GetKeyDown("w") ||Input.GetKeyDown(KeyCode.Space)) && isGrounded)
         {
             _rigidbody2d.AddForce(transform.up * thrust, ForceMode2D.Impulse);
             isGrounded = false;

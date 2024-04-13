@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f7a45eb2a3b645c4b99097174b8d714a
+guid: 77c083b477f8683409fc25140445d80b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ghost_pig_0
+      name: penguin_ghost_0
       rect:
         serializedVersion: 2
         x: 4
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff1963d64c7425f4bb9df70ea1853580
-      internalID: 1936355498
+      spriteID: d883ef13977b26d43b69ee90926f4264
+      internalID: 114667886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ghost_pig_1
+      name: penguin_ghost_1
       rect:
         serializedVersion: 2
         x: 36
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1b0d2b734c46c948a9b139cb1df0ca1
-      internalID: -371828850
+      spriteID: 98204255be558934693c137483863387
+      internalID: -152485272
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ghost_pig_2
+      name: penguin_ghost_2
       rect:
         serializedVersion: 2
         x: 68
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91979f3fc1ae66241b5fedda172290ef
-      internalID: -1846142251
+      spriteID: 3174619615d5daa45b38878d5e0c42ef
+      internalID: 1763886586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ghost_pig_3
+      name: penguin_ghost_3
       rect:
         serializedVersion: 2
         x: 100
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fddbd16640e32a41a733d17723cf73e
-      internalID: 888739576
+      spriteID: 0e39c0861a4ef8e4992b812d1c50e24c
+      internalID: 1848107525
       vertices: []
       indices: 
       edges: []
@@ -204,10 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ghost_pig_0: 1936355498
-      ghost_pig_1: -371828850
-      ghost_pig_2: -1846142251
-      ghost_pig_3: 888739576
+      penguin_ghost_0: 114667886
+      penguin_ghost_1: -152485272
+      penguin_ghost_2: 1763886586
+      penguin_ghost_3: 1848107525
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

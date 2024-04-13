@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f7a45eb2a3b645c4b99097174b8d714a
+guid: b50dd1212bef8784eaf581f773742272
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ghost_pig_0
+      name: elephant_0
       rect:
         serializedVersion: 2
         x: 4
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff1963d64c7425f4bb9df70ea1853580
-      internalID: 1936355498
+      spriteID: 642106e9c57133f44a01d75036b65ed6
+      internalID: 669140181
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ghost_pig_1
+      name: elephant_1
       rect:
         serializedVersion: 2
         x: 36
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1b0d2b734c46c948a9b139cb1df0ca1
-      internalID: -371828850
+      spriteID: 3cd0685565d9f2e43a89b8a1f2e325b6
+      internalID: 150281449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ghost_pig_2
+      name: elephant_2
       rect:
         serializedVersion: 2
         x: 68
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91979f3fc1ae66241b5fedda172290ef
-      internalID: -1846142251
+      spriteID: d739e0ad3230e054a9898fcb5538e53c
+      internalID: -1994058915
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ghost_pig_3
+      name: elephant_3
       rect:
         serializedVersion: 2
         x: 100
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fddbd16640e32a41a733d17723cf73e
-      internalID: 888739576
+      spriteID: 7596c01af4380bf4b98bef0c0aede91e
+      internalID: -1981224541
       vertices: []
       indices: 
       edges: []
@@ -204,10 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ghost_pig_0: 1936355498
-      ghost_pig_1: -371828850
-      ghost_pig_2: -1846142251
-      ghost_pig_3: 888739576
+      elephant_0: 669140181
+      elephant_1: 150281449
+      elephant_2: -1994058915
+      elephant_3: -1981224541
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
