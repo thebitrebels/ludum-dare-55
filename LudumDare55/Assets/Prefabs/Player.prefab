@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8457837641888998}
   - component: {fileID: 3032748597999143606}
   - component: {fileID: 7800553003205519754}
+  - component: {fileID: 3044340660080048727}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -83,18 +84,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.11, y: -0.12}
+  m_Offset: {x: -0.27084953, y: -0.28084958}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 2, y: 2}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.44, y: 0.76}
+  m_Size: {x: 0.7616991, y: 1.4203298}
   m_EdgeRadius: 0
 --- !u!50 &3032748597999143606
 Rigidbody2D:
@@ -175,6 +176,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &3044340660080048727
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6769543702094758227}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b45e61317ca4293be806acced49e23e9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &8787487840720387673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -183,6 +205,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5598956092351686694}
     m_Modifications:
+    - target: {fileID: 1026463460806718614, guid: f9f912dec046cb84389a9ebc12802e20, type: 3}
+      propertyPath: orthographic size
+      value: 7.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1456542928788670563, guid: f9f912dec046cb84389a9ebc12802e20, type: 3}
       propertyPath: m_Name
       value: Camera

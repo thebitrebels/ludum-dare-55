@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bf94a87358a96584c8238f03ae71007b
+guid: ae0abd74e0a21bb46bce77dfb1531d5a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -45,10 +45,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,11 +110,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: druid_0
+      name: spider_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 160
+        x: 4
+        y: 4
         width: 32
         height: 32
       alignment: 0
@@ -124,18 +124,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7ee70a661add8649886086551989c5c
-      internalID: 583986544
+      spriteID: 79e3183713e92b841938002515d8a2be
+      internalID: 1872063030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: druid_1
+      name: spider_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 160
+        x: 40
+        y: 4
         width: 32
         height: 32
       alignment: 0
@@ -145,50 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8341d2d4efc189446b5649470644df51
-      internalID: 1913230616
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: druid_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 789426ee6a5b0c243bcc58ea8ce6f46f
-      internalID: 1844039466
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: druid_3
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d5ff6d773623ea3408d86660d5cb7f96
-      internalID: -972922697
+      spriteID: 1591ab8b8cf37f64fbc378b5cea8bbe5
+      internalID: 47382650
       vertices: []
       indices: 
       edges: []
@@ -204,10 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      druid_0: 583986544
-      druid_1: 1913230616
-      druid_2: 1844039466
-      druid_3: -972922697
+      spider_0: 1872063030
+      spider_1: 47382650
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
