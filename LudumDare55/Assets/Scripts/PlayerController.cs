@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -55,6 +56,8 @@ public class PlayerController : MonoBehaviour
 
         _animator.SetBool("onGround", onGround);
         direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+
+        UpdateHotkeys();
     }
 
     // Frame-rate independent update cycle
@@ -133,5 +136,14 @@ public class PlayerController : MonoBehaviour
     {
         _facingLeft = !_facingLeft;
         _spriteRenderer.flipX = _facingLeft;
+    }
+
+    private void UpdateHotkeys()
+    {
+        if (Input.GetKeyUp("r"))
+        {
+            var currentSceneName = SceneManager.GetActiveScene().name;
+            SceneManager.LoadScene(currentSceneName);
+        }
     }
 }
