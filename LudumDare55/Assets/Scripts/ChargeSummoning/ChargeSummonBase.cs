@@ -78,6 +78,7 @@ public abstract class ChargeSummonBase : MonoBehaviour, IPointerDownHandler
 
     private void ShowPlaceholder()
     {
+        return;
         overlayTilemap.ClearAllTiles();
         if (SummoningActive && placeholderTile)
         {
