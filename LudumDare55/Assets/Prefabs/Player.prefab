@@ -53,16 +53,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 32
   direction: {x: 0, y: 0}
-  jumpSpeed: 15
+  jumpSpeed: 10
   jumpDelay: 0.25
   groundLayerMask:
     serializedVersion: 2
     m_Bits: 64
-  maxSpeed: 7
-  linearDrag: 4
-  gravity: 1
+  maxSpeed: 6.3
+  linearDrag: 9
+  gravity: 2
   fallMultiplier: 5
-  onGround: 0
+  onGround: 1
   groundLength: 1.1
   colliderOffset: {x: 0, y: 0, z: 0}
 --- !u!61 &8457837641888998
