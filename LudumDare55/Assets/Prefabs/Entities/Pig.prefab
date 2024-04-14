@@ -81,7 +81,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8448596c95281c447bf1af0eb26eb603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushStrength: 30
+  pushStrength: 32
   pushDelay: 1
   offset: {x: 0, y: 1, z: 0}
 --- !u!1 &7666223232003123822

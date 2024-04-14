@@ -4,9 +4,9 @@ using UnityEngine.Events;
 
 public class ResourceManager : MonoBehaviour
 {
-    public int RedResource = 5;
-    public int YellowResource = 5;
-    public int BlueResource = 5;
+    public int RedResource = 0;
+    public int YellowResource = 0;
+    public int BlueResource = 0;
 
     public UnityEvent<int> RedEvent;
     public UnityEvent<int> YellowEvent;

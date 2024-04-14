@@ -19,6 +19,7 @@ public class ResourcePanel : MonoBehaviour
 
     public void RewriteText(int newValue)
     {
+        gameObject.SetActive(newValue > 0);
         TextMeshProUGUI textMesh = GetComponentInChildren<TextMeshProUGUI>();
         textMesh.text = newValue.ToString();
     }
