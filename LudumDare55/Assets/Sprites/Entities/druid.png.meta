@@ -260,8 +260,8 @@ TextureImporter:
       name: druid_7
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 96
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -281,7 +281,7 @@ TextureImporter:
       name: druid_8
       rect:
         serializedVersion: 2
-        x: 32
+        x: 0
         y: 64
         width: 32
         height: 32
@@ -294,6 +294,27 @@ TextureImporter:
       bones: []
       spriteID: 98f886ec5dd180665bf666bf1d691a87
       internalID: 1007185600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: druid_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2728e9dfbcfa88948b3a5ec082c3dcbb
+      internalID: 321086233
       vertices: []
       indices: 
       edges: []
@@ -318,6 +339,7 @@ TextureImporter:
       druid_6: 1195089118
       druid_7: 5738210
       druid_8: 1007185600
+      druid_9: 321086233
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
