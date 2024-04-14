@@ -14,9 +14,14 @@ public abstract class ChargeSummonBase : MonoBehaviour, IPointerDownHandler
     public TileBase tileToPlace;
     protected Tilemap TileMap;
 
+    [Header("Overlay")]
+    protected Tilemap overlayTilemap;
+    public TileBase placeholderTile;
+
     protected void PerformStart()
     {
-        TileMap = FindObjectOfType<Tilemap>();
+        TileMap = GameObject.FindGameObjectWithTag("ground").GetComponent<Tilemap>();
+        overlayTilemap = GameObject.FindGameObjectWithTag("OverlayTilemap").GetComponent<Tilemap>();
         ChangeText = true;
         UpdateText();
     }
@@ -40,6 +45,7 @@ public abstract class ChargeSummonBase : MonoBehaviour, IPointerDownHandler
         }
 
         UpdateText();
+        ShowPlaceholder();
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -68,6 +74,20 @@ public abstract class ChargeSummonBase : MonoBehaviour, IPointerDownHandler
 
         MouseController.instance.Summoning();
         SummoningActive = true;
+    }
+
+    private void ShowPlaceholder()
+    {
+        overlayTilemap.ClearAllTiles();
+        if (SummoningActive && placeholderTile)
+        {
+            var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mousePosition.z = 0;
+
+            var cellVector3 = TileMap.WorldToCell(mousePosition);
+
+            overlayTilemap.SetTile(cellVector3, placeholderTile);
+        }
     }
 
     protected abstract void PerformSummon();
