@@ -142,8 +142,8 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyUp("r"))
         {
-            var currentSceneName = SceneManager.GetActiveScene().name;
-            SceneManager.LoadScene(currentSceneName);
+            var currentSceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+            UnityEngine.SceneManagement.SceneManager.LoadScene(currentSceneName);
         }
     }
 }

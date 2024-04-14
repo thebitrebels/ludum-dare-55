@@ -319,6 +319,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: ground_grass_10
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 4
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94c551835d47e8445be3c9e9234f3ba5
+      internalID: 326562915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground_grass_11
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 4
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12112cb708ecaaf4491828212c0f811b
+      internalID: 126680443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -332,6 +374,8 @@ TextureImporter:
     nameFileIdTable:
       ground_grass_0: 1133362164
       ground_grass_1: 171809122
+      ground_grass_10: 326562915
+      ground_grass_11: 126680443
       ground_grass_2: -1887606614
       ground_grass_3: 1349491430
       ground_grass_4: -843055761
