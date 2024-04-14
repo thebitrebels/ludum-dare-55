@@ -12,16 +12,18 @@ public abstract class ResourceSummoning : MonoBehaviour, IPointerDownHandler
     public TileBase tileToPlace;
     protected Tilemap TileMap;
 
+    private MouseController mouseController;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        mouseController = FindObjectOfType<MouseController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     protected void PerformUpdate()
@@ -38,9 +40,9 @@ public abstract class ResourceSummoning : MonoBehaviour, IPointerDownHandler
             // Check for left click
             if (Input.GetMouseButtonDown(0))
             {
-                if(ResourceManager.instance.CanPerformSummoning(costRed, costYellow, costBlue))
+                if (ResourceManager.instance.CanPerformSummoning(costRed, costYellow, costBlue))
                 {
-                    if(TryPerformSummon())
+                    if (TryPerformSummon())
                     {
                         ResourceManager.instance.PerformSummoning(costRed, costYellow, costBlue);
                     };
@@ -54,7 +56,7 @@ public abstract class ResourceSummoning : MonoBehaviour, IPointerDownHandler
 
     protected void DeactivateSummoning()
     {
-        MouseController.instance.Default();
+        mouseController.Default();
         SummoningActive = false;
     }
 
@@ -70,7 +72,7 @@ public abstract class ResourceSummoning : MonoBehaviour, IPointerDownHandler
             || ResourceManager.instance.BlueResource < costBlue)
             return;
 
-        MouseController.instance.Summoning();
+        mouseController.Summoning();
         SummoningActive = true;
     }
 }

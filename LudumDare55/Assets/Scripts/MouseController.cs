@@ -3,29 +3,14 @@ using UnityEngine.Tilemaps;
 
 public class MouseController : MonoBehaviour
 {
-    public static MouseController instance;
-
     public Texture2D defaultCursor, clickableCursor, summoningCursor;
     public GameObject particleSystem;
-    
+
     public SummoningBase activeSummoning;
 
     [Header("Overlay")]
     public Tilemap overlayTilemap;
     public Tilemap TileMap;
-
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else 
-        {
-            Destroy(gameObject);
-        }
-    }
 
     private void Update()
     {
@@ -45,7 +30,7 @@ public class MouseController : MonoBehaviour
                 mousePosition.z = 0;
 
                 var cellVector3 = TileMap.WorldToCell(mousePosition);
-                if(activeSummoning.CanPerformSummonAt(cellVector3, TileMap))
+                if (activeSummoning.CanPerformSummonAt(cellVector3, TileMap))
                 {
                     activeSummoning.PerformSummon(cellVector3, TileMap);
                     activeSummoning = null;
