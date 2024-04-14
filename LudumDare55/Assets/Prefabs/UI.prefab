@@ -370,6 +370,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 563110367045849830}
     m_Modifications:
+    - target: {fileID: 59729648603054068, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1681719076, guid: 0188e034924e898469514f0dbe7ceac9, type: 3}
+    - target: {fileID: 113700565566492146, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 779387288, guid: 521c9f5962e2061438e040d112e7ad36, type: 3}
     - target: {fileID: 301020699223627984, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
