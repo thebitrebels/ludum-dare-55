@@ -27,17 +27,13 @@ public class ResourceManager : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        SetRed(RedResource);
+        SetYellow(YellowResource);
+        SetBlue(BlueResource);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void SetRed(int red)
     {

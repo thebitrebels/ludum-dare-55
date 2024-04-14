@@ -83,7 +83,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pushStrength: 30
   pushDelay: 1
-  offset: {x: 0.4, y: 0.2, z: 0}
+  offset: {x: 0, y: 1, z: 0}
 --- !u!1 &7666223232003123822
 GameObject:
   m_ObjectHideFlags: 0
