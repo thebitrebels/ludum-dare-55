@@ -433,4 +433,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxCharges: 1
   currentCharges: 1
-  tileToPlace: {fileID: 0}
+  tileToPlace: {fileID: 11400000, guid: 7f4ca252de5ad2c44a9a52c7b6ed268a, type: 2}
