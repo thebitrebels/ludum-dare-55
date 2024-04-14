@@ -17,6 +17,7 @@ public abstract class ChargeSummonBase : MonoBehaviour, IPointerDownHandler
     protected void PerformStart()
     {
         TileMap = FindObjectOfType<Tilemap>();
+        ChangeText = true;
         UpdateText();
     }
 
