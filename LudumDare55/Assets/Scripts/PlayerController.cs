@@ -88,7 +88,6 @@ public class PlayerController : MonoBehaviour
             _rigidbody2d.velocity = new Vector2(Mathf.Sign(_rigidbody2d.velocity.x) * maxSpeed, _rigidbody2d.velocity.y);
         }
 
-        Debug.Log(Mathf.Abs(_rigidbody2d.velocity.x));
         _animator.SetFloat("horizontal", Mathf.Abs(_rigidbody2d.velocity.x));
         _animator.SetFloat("vertical", _rigidbody2d.velocity.y);
     }
