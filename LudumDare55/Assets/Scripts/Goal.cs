@@ -6,7 +6,8 @@ public class Goal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(nextSceneName);
+        if (collision.gameObject.tag == "Player")  
+            UnityEngine.SceneManagement.SceneManager.LoadScene(nextSceneName);
     }
 
 }
