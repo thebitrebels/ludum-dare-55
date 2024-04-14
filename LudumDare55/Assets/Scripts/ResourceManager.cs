@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -53,5 +54,19 @@ public class ResourceManager : MonoBehaviour
     {
         BlueResource = blue;
         BlueEvent.Invoke(BlueResource);
+    }
+
+    public bool CanPerformSummoning(int costRed, int costYellow, int costBlue)
+    {
+        return ResourceManager.instance.RedResource >= costRed
+            && ResourceManager.instance.YellowResource >= costYellow
+            && ResourceManager.instance.BlueResource >= costBlue;
+    }
+
+    public void PerformSummoning(int costRed, int costYellow, int costBlue)
+    {
+        SetRed(RedResource - costRed); 
+        SetYellow(YellowResource - costYellow); 
+        SetBlue(BlueResource - costBlue);
     }
 }
