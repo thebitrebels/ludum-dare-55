@@ -647,32 +647,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7103140253461810426, guid: f356ffe6d5a4ae34a894418cbf1c0442, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8295665098264103802}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f356ffe6d5a4ae34a894418cbf1c0442, type: 3}
---- !u!1 &6998358883570919394 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7103140253461810426, guid: f356ffe6d5a4ae34a894418cbf1c0442, type: 3}
-  m_PrefabInstance: {fileID: 255656512241740568}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8295665098264103802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6998358883570919394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b579f1b16ca50254192a19fef40b0001, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxCharges: 1
-  currentCharges: 1
-  tileToPlace: {fileID: 11400000, guid: 7f4ca252de5ad2c44a9a52c7b6ed268a, type: 2}
-  placeholderTile: {fileID: 11400000, guid: 9755a0e6e7aa4d9939d36b681684ed1a, type: 2}
 --- !u!224 &7308734824709837884 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7413366611378470692, guid: f356ffe6d5a4ae34a894418cbf1c0442, type: 3}
@@ -686,6 +662,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6042581576861457760}
     m_Modifications:
+    - target: {fileID: 241072265714996460, guid: 1b1f1864ce77f54478fc8965db68c6ee, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1367486442, guid: e0de7575eec8e7a4f8c8119122659228, type: 3}
     - target: {fileID: 557286932011342075, guid: 1b1f1864ce77f54478fc8965db68c6ee, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -752,7 +732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7103140253461810426, guid: 1b1f1864ce77f54478fc8965db68c6ee, type: 3}
       propertyPath: m_Name
-      value: SecondSummon
+      value: ElephantSummon
       objectReference: {fileID: 0}
     - target: {fileID: 7229795028726044064, guid: 1b1f1864ce77f54478fc8965db68c6ee, type: 3}
       propertyPath: m_AnchorMax.y
@@ -877,8 +857,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7103140253461810426, guid: 1b1f1864ce77f54478fc8965db68c6ee, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8257350368049695383}
   m_SourcePrefab: {fileID: 100100000, guid: 1b1f1864ce77f54478fc8965db68c6ee, type: 3}
+--- !u!1 &6991272538590268625 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7103140253461810426, guid: 1b1f1864ce77f54478fc8965db68c6ee, type: 3}
+  m_PrefabInstance: {fileID: 258553699193012267}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8257350368049695383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6991272538590268625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fac5f6155abe49aab481cd8cdad89cd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placeholderTile: {fileID: 0}
+  costRed: 0
+  costYellow: 1
+  costBlue: 1
+  tileToPlace: {fileID: 0}
 --- !u!224 &7311313207106682639 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7413366611378470692, guid: 1b1f1864ce77f54478fc8965db68c6ee, type: 3}
