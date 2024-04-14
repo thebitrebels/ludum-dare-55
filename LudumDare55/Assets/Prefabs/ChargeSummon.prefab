@@ -269,7 +269,6 @@ GameObject:
   - component: {fileID: 7694059609358200535}
   - component: {fileID: 39104173639394682}
   - component: {fileID: 2396887155541870175}
-  - component: {fileID: 6095880148052144837}
   m_Layer: 5
   m_Name: ChargeSummon
   m_TagString: Untagged
@@ -419,18 +418,3 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &6095880148052144837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7103140253461810426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b579f1b16ca50254192a19fef40b0001, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxCharges: 1
-  currentCharges: 1
-  tileToPlace: {fileID: 11400000, guid: 7f4ca252de5ad2c44a9a52c7b6ed268a, type: 2}
