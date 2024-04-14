@@ -240,6 +240,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5100803721387205192, guid: 0c9dfc18527e95f4db099e1b34df37f8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6497690951353156286, guid: 0c9dfc18527e95f4db099e1b34df37f8, type: 3}
       propertyPath: m_Name
       value: ResourcePanelRed
