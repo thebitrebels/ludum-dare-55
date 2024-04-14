@@ -52,6 +52,22 @@ public class ResourceManager : MonoBehaviour
         BlueEvent.Invoke(BlueResource);
     }
 
+    public void CollectRed() {
+        RedResource++;
+        RedEvent.Invoke(RedResource); 
+    }
+
+    public void CollectYellow()
+    {
+        YellowResource++;
+        YellowEvent.Invoke(YellowResource);
+    }
+
+    public void CollectBlue() {
+        BlueResource++;
+        BlueEvent.Invoke(BlueResource); 
+    }
+
     public bool CanPerformSummoning(int costRed, int costYellow, int costBlue)
     {
         return RedResource >= costRed
