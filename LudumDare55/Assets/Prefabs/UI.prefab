@@ -674,6 +674,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5316524204049267464, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5346851788680507817, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
       propertyPath: m_Name
       value: SummoningBook
