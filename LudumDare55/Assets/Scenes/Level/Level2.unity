@@ -338,6 +338,54 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2240086413907141838, guid: cf3cb22853cebe74a8a6cad0344d5aa1, type: 3}
   m_PrefabInstance: {fileID: 374918837}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &509656887
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 509656889}
+  - component: {fileID: 509656888}
+  m_Layer: 0
+  m_Name: MouseController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &509656888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509656887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bddb6c73b68bf4459038fcf3f641f74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: 3f0810d21bb25f24aa349ccaadf0582d, type: 3}
+  clickableCursor: {fileID: 2800000, guid: 8828e319e2a6b6d4ea29fd2a51ae9d6c, type: 3}
+  summoningCursor: {fileID: 2800000, guid: 8828e319e2a6b6d4ea29fd2a51ae9d6c, type: 3}
+  particleSystem: {fileID: 1293033065}
+--- !u!4 &509656889
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509656887}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1072904109
 GameObject:
   m_ObjectHideFlags: 0
@@ -11965,6 +12013,11 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!1 &1293033065 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3366740889011140631, guid: af2d5389aed728683bd6d44c7093d7a2, type: 3}
+  m_PrefabInstance: {fileID: 202976987}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1997111025 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6280078509936869445, guid: 534532ebf38644a48a06419c1f5faa1c, type: 3}
@@ -12922,3 +12975,4 @@ SceneRoots:
   - {fileID: 202976987}
   - {fileID: 4622249720237646339}
   - {fileID: 34551324}
+  - {fileID: 509656889}
