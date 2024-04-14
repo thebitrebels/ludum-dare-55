@@ -672,6 +672,7 @@ MonoBehaviour:
   maxCharges: 1
   currentCharges: 1
   tileToPlace: {fileID: 11400000, guid: 7f4ca252de5ad2c44a9a52c7b6ed268a, type: 2}
+  placeholderTile: {fileID: 11400000, guid: 9755a0e6e7aa4d9939d36b681684ed1a, type: 2}
 --- !u!224 &7308734824709837884 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7413366611378470692, guid: f356ffe6d5a4ae34a894418cbf1c0442, type: 3}

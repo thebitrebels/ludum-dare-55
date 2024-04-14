@@ -41,6 +41,7 @@ public abstract class ChargeSummonBase : MonoBehaviour, IPointerDownHandler
             if (Input.GetMouseButtonDown(0))
             {
                 PerformSummon();
+                DeactivateSummoning();
             }
         }
 

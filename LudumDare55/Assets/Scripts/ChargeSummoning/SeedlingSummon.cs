@@ -18,8 +18,6 @@ public class SeedlingSummon : ChargeSummonBase
         // Example: Change the leftNum value
         currentCharges--;
         ChangeText = true;
-
-        DeactivateSummoning();
     }
 
     // Start is called before the first frame update
