@@ -113,10 +113,10 @@ TextureImporter:
       name: druid_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 6
         y: 160
-        width: 32
-        height: 32
+        width: 16
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,9 +134,9 @@ TextureImporter:
       name: druid_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 38
         y: 160
-        width: 32
+        width: 16
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: druid_2
       rect:
         serializedVersion: 2
-        x: 0
+        x: 6
         y: 128
-        width: 32
-        height: 32
+        width: 16
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: druid_3
       rect:
         serializedVersion: 2
-        x: 32
+        x: 38
         y: 128
-        width: 32
-        height: 32
+        width: 17
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,6 +189,111 @@ TextureImporter:
       bones: []
       spriteID: d5ff6d773623ea3408d86660d5cb7f96
       internalID: -972922697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: druid_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 96
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c72ef391e4460d1a6125970adf4b81
+      internalID: 976174458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: druid_5
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 96
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b0fa9438b46c76c883847f2bb222909
+      internalID: 1601091759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: druid_6
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 96
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f7e637c3c821655b925fddacf437cd
+      internalID: 1195089118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: druid_7
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 64
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e17d7ecd2d3d65e1cadee9a6a22f5dc2
+      internalID: 5738210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: druid_8
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 64
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f886ec5dd180665bf666bf1d691a87
+      internalID: 1007185600
       vertices: []
       indices: 
       edges: []
@@ -208,6 +313,11 @@ TextureImporter:
       druid_1: 1913230616
       druid_2: 1844039466
       druid_3: -972922697
+      druid_4: 976174458
+      druid_5: 1601091759
+      druid_6: 1195089118
+      druid_7: 5738210
+      druid_8: 1007185600
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
