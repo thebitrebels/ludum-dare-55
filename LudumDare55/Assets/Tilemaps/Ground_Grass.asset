@@ -157,14 +157,16 @@ MonoBehaviour:
     m_RuleTransform: 0
   - m_Id: 5
     m_Sprites:
-    - {fileID: -843055761, guid: 2d512b1e3b61a2d4697a5d29cdaf7e57, type: 3}
+    - {fileID: 126680443, guid: 2d512b1e3b61a2d4697a5d29cdaf7e57, type: 3}
+    - {fileID: 326562915, guid: 2d512b1e3b61a2d4697a5d29cdaf7e57, type: 3}
+    - {fileID: 880420924, guid: 2d512b1e3b61a2d4697a5d29cdaf7e57, type: 3}
     m_GameObject: {fileID: 0}
     m_MinAnimationSpeed: 1
     m_MaxAnimationSpeed: 1
     m_PerlinScale: 0.5
-    m_Output: 0
+    m_Output: 1
     m_ColliderType: 2
-    m_RandomTransform: 0
+    m_RandomTransform: 5
     m_Neighbors: 01000000010000000100000001000000
     m_NeighborPositions:
     - {x: 0, y: 1, z: 0}
