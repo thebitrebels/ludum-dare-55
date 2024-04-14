@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Elephant_Tile
   m_EditorClassIdentifier: 
   m_DefaultSprite: {fileID: 0}
-  m_DefaultGameObject: {fileID: 2051800303510873046, guid: a6ad7d7baf41ab94ead0d6e9556b941c, type: 3}
+  m_DefaultGameObject: {fileID: 2051800303510873046, guid: 046120294425f5d45a6f686a963c09f2, type: 3}
   m_DefaultColliderType: 2
   m_TilingRules: []

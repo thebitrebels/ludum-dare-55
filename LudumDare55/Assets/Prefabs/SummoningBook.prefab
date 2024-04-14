@@ -854,6 +854,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8884024010438137896, guid: 1b1f1864ce77f54478fc8965db68c6ee, type: 3}
+      propertyPath: m_text
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -879,11 +883,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fac5f6155abe49aab481cd8cdad89cd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  placeholderTile: {fileID: 0}
+  placeholderTile: {fileID: 11400000, guid: a3d462f9846e2c44dbf9392cc8fcb363, type: 2}
   costRed: 0
   costYellow: 1
   costBlue: 1
-  tileToPlace: {fileID: 0}
+  tileToPlace: {fileID: 11400000, guid: c3aafd1861406d24eac778efb8aa1258, type: 2}
 --- !u!224 &7311313207106682639 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7413366611378470692, guid: 1b1f1864ce77f54478fc8965db68c6ee, type: 3}

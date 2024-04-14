@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ground
   - OverlayTilemap
+  - Water
   layers:
   - Default
   - TransparentFX
