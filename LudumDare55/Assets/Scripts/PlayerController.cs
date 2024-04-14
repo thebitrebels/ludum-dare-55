@@ -43,7 +43,8 @@ public class PlayerController : MonoBehaviour
     {
         var wasOnGround = onGround;
         onGround = Physics2D.Raycast(transform.position + colliderOffset, Vector2.down, groundLength, groundLayerMask) || Physics2D.Raycast(transform.position - colliderOffset, Vector2.down, groundLength, groundLayerMask);
-
+        Debug.DrawRay(transform.position + colliderOffset, groundLength * Vector2.down, Color.blue);
+        Debug.DrawRay(transform.position - colliderOffset, groundLength * Vector2.down, Color.blue);
         if (!wasOnGround && onGround)
         {
             // squeeze
