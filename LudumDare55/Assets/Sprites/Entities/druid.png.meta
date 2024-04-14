@@ -113,10 +113,10 @@ TextureImporter:
       name: druid_0
       rect:
         serializedVersion: 2
-        x: 6
+        x: 0
         y: 160
-        width: 16
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,9 +134,9 @@ TextureImporter:
       name: druid_1
       rect:
         serializedVersion: 2
-        x: 38
+        x: 32
         y: 160
-        width: 16
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: druid_2
       rect:
         serializedVersion: 2
-        x: 6
+        x: 0
         y: 128
-        width: 16
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: druid_3
       rect:
         serializedVersion: 2
-        x: 38
+        x: 32
         y: 128
-        width: 17
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: druid_4
       rect:
         serializedVersion: 2
-        x: 6
+        x: 0
         y: 96
-        width: 16
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +218,10 @@ TextureImporter:
       name: druid_5
       rect:
         serializedVersion: 2
-        x: 38
+        x: 32
         y: 96
-        width: 20
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,9 +239,9 @@ TextureImporter:
       name: druid_6
       rect:
         serializedVersion: 2
-        x: 70
+        x: 64
         y: 96
-        width: 14
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -260,10 +260,10 @@ TextureImporter:
       name: druid_7
       rect:
         serializedVersion: 2
-        x: 6
+        x: 0
         y: 64
-        width: 16
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,9 +281,9 @@ TextureImporter:
       name: druid_8
       rect:
         serializedVersion: 2
-        x: 34
+        x: 32
         y: 64
-        width: 24
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
