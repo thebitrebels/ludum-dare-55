@@ -51,12 +51,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd880d8efb929284386e27522bbd6e70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementSpeed: 32
+  direction: {x: 0, y: 0}
+  jumpSpeed: 15
+  jumpDelay: 0.25
   groundLayerMask:
     serializedVersion: 2
     m_Bits: 64
-  velocityX: 0.1
-  thrust: 6
-  isGrounded: 0
+  maxSpeed: 7
+  linearDrag: 4
+  gravity: 1
+  fallMultiplier: 5
+  onGround: 0
+  groundLength: 1.1
+  colliderOffset: {x: 0, y: 0, z: 0}
 --- !u!61 &8457837641888998
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -93,7 +101,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
+    oldSize: {x: 1, y: 1.9375}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
