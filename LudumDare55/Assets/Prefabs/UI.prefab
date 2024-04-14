@@ -141,7 +141,7 @@ Tilemap:
   m_TileColorArray: []
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 0.3137255}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
   m_Origin: {x: 0, y: 0, z: 0}
   m_Size: {x: 0, y: 0, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -934,11 +934,61 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8295665098264103802, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6998358883570919394, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5274420619970808856}
+    - targetCorrespondingSourceObject: {fileID: 6942557830291428836, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1194111785001585201}
   m_SourcePrefab: {fileID: 100100000, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
+--- !u!1 &3220081286427675991 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6942557830291428836, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
+  m_PrefabInstance: {fileID: 5541940263733631155}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1194111785001585201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3220081286427675991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93513121a791dbe4e815484369d42fd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placeholderTile: {fileID: 11400000, guid: 7f382d0b416fb5d4a8e58c1c5a17ca35, type: 2}
+  costRed: 1
+  costYellow: 0
+  costBlue: 1
+  tileToPlace: {fileID: 11400000, guid: c3b397b9dbe40e546935d4db754cbe67, type: 2}
+--- !u!1 &3312334981874237265 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6998358883570919394, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
+  m_PrefabInstance: {fileID: 5541940263733631155}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5274420619970808856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3312334981874237265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ad7eca81020884381b1731a97c2a00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placeholderTile: {fileID: 11400000, guid: 9755a0e6e7aa4d9939d36b681684ed1a, type: 2}
+  maxCharges: 1
+  currentCharges: 1
+  tileToPlace: {fileID: 11400000, guid: 7f4ca252de5ad2c44a9a52c7b6ed268a, type: 2}
 --- !u!224 &9085612212241818977 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3674507824703536594, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}

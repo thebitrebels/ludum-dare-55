@@ -4,9 +4,9 @@ using UnityEngine.Events;
 
 public class ResourceManager : MonoBehaviour
 {
-    public int RedResource = 0;
-    public int YellowResource = 0;
-    public int BlueResource = 0;
+    public int RedResource = 5;
+    public int YellowResource = 5;
+    public int BlueResource = 5;
 
     public UnityEvent<int> RedEvent;
     public UnityEvent<int> YellowEvent;
@@ -58,9 +58,9 @@ public class ResourceManager : MonoBehaviour
 
     public bool CanPerformSummoning(int costRed, int costYellow, int costBlue)
     {
-        return ResourceManager.instance.RedResource >= costRed
-            && ResourceManager.instance.YellowResource >= costYellow
-            && ResourceManager.instance.BlueResource >= costBlue;
+        return RedResource >= costRed
+            && YellowResource >= costYellow
+            && BlueResource >= costBlue;
     }
 
     public void PerformSummoning(int costRed, int costYellow, int costBlue)
