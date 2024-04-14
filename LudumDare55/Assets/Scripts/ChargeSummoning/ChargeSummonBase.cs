@@ -23,6 +23,7 @@ public abstract class ChargeSummonBase : MonoBehaviour, IPointerDownHandler
         TileMap = GameObject.FindGameObjectWithTag("ground").GetComponent<Tilemap>();
         overlayTilemap = GameObject.FindGameObjectWithTag("OverlayTilemap").GetComponent<Tilemap>();
         ChangeText = true;
+
         UpdateText();
     }
 
@@ -34,14 +35,12 @@ public abstract class ChargeSummonBase : MonoBehaviour, IPointerDownHandler
             if (Input.GetMouseButtonDown(1))
             {
                 DeactivateSummoning();
-                return;
             }
-
             // Check for left click
-            if (Input.GetMouseButtonDown(0))
+            else if (Input.GetMouseButtonDown(0))
             {
                 PerformSummon();
-                DeactivateSummoning();
+                // DeactivateSummoning();
             }
         }
 
