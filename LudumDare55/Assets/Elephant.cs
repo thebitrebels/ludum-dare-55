@@ -1,8 +1,7 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Tilemaps;
 
 public class Elephant : MonoBehaviour
@@ -39,8 +38,9 @@ public class Elephant : MonoBehaviour
             _drained += drainSpeed;
             if (_drained >= 1f)
             {
+                _drainingMap.GetComponent<BoxCollider2D>().enabled = false;
                 _drainingMap = null;
-                Destroy(gameObject);
+                
             }
         }
     }

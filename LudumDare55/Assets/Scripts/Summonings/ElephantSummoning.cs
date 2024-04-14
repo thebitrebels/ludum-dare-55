@@ -1,3 +1,5 @@
+using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -27,5 +29,12 @@ public class ElephantSummoning : SummoningBase
         // Drains Water
         tilemap.SetTile(worldToCellVector, tileToPlace);
         ResourceManager.instance.PerformSummoning(costRed, costYellow, costBlue);
+        StartCoroutine(ClearTileWithDelay(tilemap, worldToCellVector));
+    }
+
+    static IEnumerator ClearTileWithDelay(Tilemap tilemap, Vector3Int pos)
+    {
+        yield return new WaitForSeconds(3);
+        tilemap.SetTile(pos, null);
     }
 }
