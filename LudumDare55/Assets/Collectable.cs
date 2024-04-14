@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -8,6 +6,7 @@ public class Collectable : MonoBehaviour
     private PlayerController _playerController;
     private Collider2D _collider;
 
+    public string key;
     public CollectableEvent onCollected;
     
     private void Start()
