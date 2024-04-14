@@ -26,10 +26,8 @@ public class PlayerController : MonoBehaviour
 
     [Header("Collision")]
     public bool onGround = false;
-    public float groundLength = 1.01f;
+    public float groundLength = 1.1f;
     public Vector3 colliderOffset;
-
-    private static readonly int IsWalking = Animator.StringToHash("isWalking");
 
     // Start is called before the first frame update
     private void Start()
