@@ -1236,7 +1236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7103140253461810426, guid: 1b1f1864ce77f54478fc8965db68c6ee, type: 3}
       propertyPath: m_Name
-      value: ThirdSummon
+      value: PenguinSummon
       objectReference: {fileID: 0}
     - target: {fileID: 7229795028726044064, guid: 1b1f1864ce77f54478fc8965db68c6ee, type: 3}
       propertyPath: m_AnchorMax.y

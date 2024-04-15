@@ -170,7 +170,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -40829196, guid: a3763155cf557b74aa90f4b008e8ddfc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -596,6 +596,7 @@ GameObject:
   - component: {fileID: 546692488514183510}
   - component: {fileID: 1558082616093384954}
   - component: {fileID: 8500657119435109537}
+  - component: {fileID: 4920192295032309164}
   m_Layer: 5
   m_Name: ResourceSummon
   m_TagString: Untagged
@@ -745,3 +746,20 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &4920192295032309164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7103140253461810426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 079386a977736f612ad66ab3e7111fde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placeholderTile: {fileID: 11400000, guid: e1ddb1f900f6060ac9577aa91b5d44aa, type: 2}
+  costRed: 1
+  costYellow: 1
+  costBlue: 1
+  tileToPlace: {fileID: 11400000, guid: 665c32ec5813142c5a05ee59419c8fc5, type: 2}
