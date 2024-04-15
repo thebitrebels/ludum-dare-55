@@ -22,7 +22,13 @@ public class MouseController : MonoBehaviour
 
         if (activeSummoning != null)
         {
-            Debug.Log("intersects player: " + activeSummoning.IntersectsPlayer());
+            if (Camera.main == null) return;
+            var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mousePosition.z = 0;
+            if (activeSummoning.IntersectsPlayer(TileMap, TileMap.WorldToCell(mousePosition)))
+            {
+                return;
+            }
             if (Input.GetMouseButtonDown(1))
             {
                 activeSummoning = null;
@@ -30,9 +36,6 @@ public class MouseController : MonoBehaviour
             }
             else if (Input.GetMouseButtonDown(0))
             {
-                if (Camera.main == null) return;
-                var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                mousePosition.z = 0;
 
                 var cellVector3 = TileMap.WorldToCell(mousePosition);
                 if (activeSummoning.CanPerformSummonAt(cellVector3, TileMap))
@@ -97,6 +100,10 @@ public class MouseController : MonoBehaviour
 
         var cellVector3 = TileMap.WorldToCell(mousePosition);
 
+        if (activeSummoning.IntersectsPlayer(TileMap, cellVector3))
+        {
+            return;
+        }
         if (!activeSummoning.CanPerformSummonAt(cellVector3, TileMap))
             return;
 

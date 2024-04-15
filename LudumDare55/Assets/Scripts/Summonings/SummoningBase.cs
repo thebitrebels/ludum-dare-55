@@ -12,11 +12,11 @@ public abstract class SummoningBase : MonoBehaviour, IPointerUpHandler, IPointer
         FindObjectOfType<MouseController>().SetActiveSummon(this);
     }
 
-    public bool IntersectsPlayer()
+    public bool IntersectsPlayer(Tilemap tilemap, Vector3Int worldToCellVector)
     {
-        var pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        var player = Physics2D.Raycast(pos, Vector2.down);
-        return player;
+        var playerPosition = FindObjectOfType<PlayerController>().transform.position;
+        Debug.Log(worldToCellVector + " - " + playerPosition);
+        return Vector3.Distance(worldToCellVector, tilemap.WorldToCell(playerPosition)) <= 1f;
     }
 
     public abstract void PerformSummon(Vector3Int worldToCellVector, Tilemap tilemap);
