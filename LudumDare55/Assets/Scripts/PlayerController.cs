@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -49,8 +51,13 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         var wasOnGround = onGround;
-        var invertedColliderOffsetVertical = new Vector3(colliderOffset.x, -colliderOffset.y, 0f);
-        onGround = Physics2D.Raycast(transform.position + invertedColliderOffsetVertical , Vector2.down, groundLength, groundLayerMask) || Physics2D.Raycast(transform.position - colliderOffset, Vector2.down, groundLength, groundLayerMask);
+        var invertedColliderOffsetVertical = new Vector3(colliderOffset.x, - colliderOffset.y, 0f);
+
+        var firstHit = Physics2D.Raycast(transform.position + invertedColliderOffsetVertical, Vector2.down, groundLength,
+            groundLayerMask);
+        var secondHit = Physics2D.Raycast(transform.position - colliderOffset, Vector2.down, groundLength, groundLayerMask);
+        OnPossibleLiftEnter(firstHit, secondHit);
+        onGround = firstHit || secondHit;
         Debug.DrawRay(transform.position + invertedColliderOffsetVertical, groundLength * Vector2.down, Color.blue);
         Debug.DrawRay(transform.position - colliderOffset, groundLength * Vector2.down, Color.blue);
         if (!wasOnGround && onGround)
@@ -99,6 +106,29 @@ public class PlayerController : MonoBehaviour
 
         _animator.SetFloat("horizontal", Mathf.Abs(_rigidbody2d.velocity.x));
         _animator.SetFloat("vertical", _rigidbody2d.velocity.y);
+    }
+
+    private void OnPossibleLiftEnter(RaycastHit2D left, RaycastHit2D right)
+    {
+        if (right.collider != null && right.collider.gameObject.GetComponent<Lift>() && onGround)
+        {
+            transform.parent = right.collider.transform;
+            return;
+        }
+        if (left.collider != null && left.collider.gameObject.GetComponent<Lift>() && onGround)
+        {
+            transform.parent = left.collider.transform;
+            return;
+        }
+        transform.parent = null;
+    }
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.GetComponent<Lift>())
+        {
+            transform.parent = null;
+        }
     }
 
     private void Jump()

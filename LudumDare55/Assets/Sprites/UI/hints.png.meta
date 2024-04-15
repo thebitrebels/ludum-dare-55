@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1177fccb74d57a84c8cbf2a788aae52c
+guid: ef3408c176f084e4990977356d2ab3ad
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wood_planks_0
+      name: hints_0
       rect:
         serializedVersion: 2
         x: 4
-        y: 29
-        width: 32
-        height: 7
+        y: 4
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a61fdcd92882b0a44b4351b1bbb8410f
-      internalID: -1731061889
+      spriteID: 231593597f1ac064fb6a981ecdf65ac0
+      internalID: -1181633550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wood_planks_1
+      name: hints_1
       rect:
         serializedVersion: 2
-        x: 40
-        y: 30
-        width: 32
-        height: 6
+        x: 136
+        y: 4
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,92 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 279a0c62ae91b974bb1f554db25de2c7
-      internalID: -1199099660
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_planks_2
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 29
-        width: 32
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed6e1d8af75e8a044ad54e9473822631
-      internalID: -753832582
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_planks_3
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 23
-        width: 32
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4609148204b819b40859ca3259242ff5
-      internalID: 1055422561
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_planks_4
-      rect:
-        serializedVersion: 2
-        x: 148
-        y: 30
-        width: 32
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d6759e6e769b2e41bddf64574f3ea3a
-      internalID: 1100438247
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wood_planks_5
-      rect:
-        serializedVersion: 2
-        x: 184
-        y: 30
-        width: 32
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e83fa562f4e6b24dba1b5cf84d94707
-      internalID: 1748380825
+      spriteID: e234e7301c401e04c8a372a3ac429b5d
+      internalID: 1977082929
       vertices: []
       indices: 
       edges: []
@@ -246,12 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      wood_planks_0: -1731061889
-      wood_planks_1: -1199099660
-      wood_planks_2: -753832582
-      wood_planks_3: 1055422561
-      wood_planks_4: 1100438247
-      wood_planks_5: 1748380825
+      hints_0: -1181633550
+      hints_1: 1977082929
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

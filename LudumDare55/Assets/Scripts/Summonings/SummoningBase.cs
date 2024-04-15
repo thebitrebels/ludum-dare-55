@@ -15,7 +15,6 @@ public abstract class SummoningBase : MonoBehaviour, IPointerUpHandler, IPointer
     public bool IntersectsPlayer(Tilemap tilemap, Vector3Int worldToCellVector)
     {
         var playerPosition = FindObjectOfType<PlayerController>().transform.position;
-        Debug.Log(worldToCellVector + " - " + playerPosition);
         return Vector3.Distance(worldToCellVector, tilemap.WorldToCell(playerPosition)) <= 1f;
     }
 

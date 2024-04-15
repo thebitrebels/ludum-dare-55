@@ -30,7 +30,6 @@ public class SeedlingSummoning : SummoningBase
 
     public override bool CanPerformSummon()
     {
-        Debug.Log("CAN PERFORM SUMMON? Charges: " + currentCharges);
         return currentCharges > 0;
     }
 
