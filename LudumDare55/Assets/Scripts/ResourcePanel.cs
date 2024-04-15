@@ -7,7 +7,7 @@ public class ResourcePanel : MonoBehaviour
 {
     public void RewriteText(int newValue)
     {
-        TextMeshProUGUI textMesh = GetComponentInChildren<TextMeshProUGUI>();
+        var textMesh = GetComponentInChildren<TextMeshProUGUI>();
         textMesh.text = newValue.ToString();
     }
 }
