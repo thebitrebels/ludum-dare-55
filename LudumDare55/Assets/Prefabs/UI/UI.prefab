@@ -742,22 +742,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3833319558206792637, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3833319558206792637, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3833319558206792637, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3833319558206792637, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3879195534326232780, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
       propertyPath: m_Type
       value: 0
@@ -1050,22 +1034,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7483050155897716408, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7483050155897716408, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7483050155897716408, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7483050155897716408, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7661252170799990640, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1198,9 +1166,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   placeholderTile: {fileID: 11400000, guid: 9755a0e6e7aa4d9939d36b681684ed1a, type: 2}
-  maxCharges: 1
-  currentCharges: 1
   tileToPlace: {fileID: 11400000, guid: 7f4ca252de5ad2c44a9a52c7b6ed268a, type: 2}
+  lifespan: 10
 --- !u!224 &9085612212241818977 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3674507824703536594, guid: e5608ac1fc1524c4fa73cc44e45a104b, type: 3}

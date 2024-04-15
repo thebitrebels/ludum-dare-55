@@ -1,13 +1,13 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
 public class SeedlingSummoning : SummoningBase
 {
-    public int maxCharges = 1;
-    public int currentCharges = 1;
     public TileBase tileToPlace;
-
+    public float lifespan = 10f;
+    private float cooldown = 0f;
     public override bool CanPerformSummonAt(Vector3Int worldToCellVector, Tilemap tilemap)
     {
         if (!CanPerformSummon())
@@ -25,16 +25,25 @@ public class SeedlingSummoning : SummoningBase
     public override void PerformSummon(Vector3Int worldToCellVector, Tilemap tilemap)
     {
         tilemap.SetTile(worldToCellVector, tileToPlace);
-        currentCharges--;
+        cooldown = lifespan;
+        StartCoroutine(DespawnAfterTimerElapsed(tilemap, worldToCellVector));
     }
 
     public override bool CanPerformSummon()
     {
-        return currentCharges > 0;
+        return cooldown <= 0f;
+    }
+
+    private IEnumerator DespawnAfterTimerElapsed(Tilemap tilemap, Vector3Int worldToCellVector)
+    {
+        yield return new WaitForSeconds(lifespan);
+        tilemap.SetTile(worldToCellVector, null);
     }
 
     private void Update()
     {
-        GetComponentInChildren<TextMeshProUGUI>().text = $"{currentCharges}/{maxCharges}";
+        cooldown = Mathf.Max(0f, cooldown - Time.deltaTime);
+        var timer = cooldown == 0f ? "" : $"{Mathf.Round(cooldown)}";
+        GetComponentInChildren<TextMeshProUGUI>().text = $"{timer}";
     }
 }

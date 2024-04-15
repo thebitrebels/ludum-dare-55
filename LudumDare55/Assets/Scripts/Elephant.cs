@@ -16,7 +16,7 @@ public class Elephant : MonoBehaviour
     private void Start()
     {
         _waterTilemaps = GameObject.FindGameObjectsWithTag("Water").Select(x => x.GetComponent<Tilemap>()).ToList();
-        var closestWater = _waterTilemaps.OrderBy((map) => Vector3.Distance(map.transform.position, transform.position)).FirstOrDefault();
+        var closestWater = _waterTilemaps.OrderBy((map) => -Vector3.Distance(map.transform.position, transform.position)).FirstOrDefault();
         if (Vector3.Distance(closestWater.transform.position, transform.position) > 15f)
         {
             return;
