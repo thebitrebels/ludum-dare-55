@@ -151,6 +151,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: hints_2
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 4
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d023c7773101448bdd686378f2011f
+      internalID: -1385925578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -164,6 +185,7 @@ TextureImporter:
     nameFileIdTable:
       hints_0: -1181633550
       hints_1: 1977082929
+      hints_2: -1385925578
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
