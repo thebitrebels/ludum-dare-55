@@ -1,17 +1,14 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.Tilemaps;
 
 public class Penguin : MonoBehaviour
 {
     public LayerMask waterLayer;
-    public float drainSpeed = 0.01f;
+    public TileBase iceTile;
     private List<Tilemap> _waterTilemaps;
-
-    private Tilemap _drainingMap;
-    private float _drained;
 
     private void Start()
     {
@@ -21,27 +18,24 @@ public class Penguin : MonoBehaviour
         {
             return;
         }
-        Drain(closestWater);
+
+        StartCoroutine(Freeze(closestWater));
     }
 
-    private void Drain(Tilemap closestWater)
+    private IEnumerator Freeze(Tilemap tilemap)
     {
-        _drained = 0f;
-        _drainingMap = closestWater;
-    }
-
-    private void FixedUpdate()
-    {
-        if (_drainingMap != null)
+        foreach (var pos in tilemap.cellBounds.allPositionsWithin)
         {
-            _drainingMap.transform.Translate(drainSpeed * Vector3.down);
-            _drained += drainSpeed;
-            if (_drained >= 1f)
+            Vector3Int gridPlace = new Vector3Int(pos.x, pos.y, pos.z);
+            if (tilemap.HasTile(gridPlace))
             {
-                _drainingMap.GetComponent<BoxCollider2D>().enabled = false;
-                _drainingMap = null;
-
+                TileBase tile = tilemap.GetTile(gridPlace);
+                tilemap.SetTile(gridPlace, iceTile);
+                yield return new WaitForSeconds(0.2f);
             }
         }
+
+
+        tilemap.GetComponent<BoxCollider2D>().enabled = false;
     }
 }

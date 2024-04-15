@@ -84,7 +84,7 @@ MonoBehaviour:
   waterLayer:
     serializedVersion: 2
     m_Bits: 0
-  drainSpeed: 0.01
+  iceTile: {fileID: 11400000, guid: 501ffc494dd1f0d43ad43b835c4243e5, type: 2}
 --- !u!1 &7666223232003123822
 GameObject:
   m_ObjectHideFlags: 0
