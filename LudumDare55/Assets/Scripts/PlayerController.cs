@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [Header("Horizontal Movement")]
     public float movementSpeed = 32f;
     public Vector2 direction;
+    public bool freezePlayer = false;
     private bool _facingLeft;
 
     [Header("Vertical Movement")]
@@ -66,13 +67,20 @@ public class PlayerController : MonoBehaviour
             _audioSource.PlayOneShot(landingSound);
         }
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && !freezePlayer)
         {
             _jumpTimer = Time.time + jumpDelay;
         }
 
         _animator.SetBool("onGround", onGround);
-        direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        if (freezePlayer)
+        {
+            direction = Vector2.zero;
+        }
+        else
+        {
+            direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        }
 
         UpdateHotkeys();
     }

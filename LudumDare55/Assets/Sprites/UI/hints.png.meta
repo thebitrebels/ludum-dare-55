@@ -172,6 +172,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: hints_3
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 4
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbed26f06b3a0bc43905435d4f637fd5
+      internalID: -1796713575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hints_4
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 4
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b798d07e1f30543b3bb1957de87791
+      internalID: 885990047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hints_5
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 4
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1504af336bc7814797354e5984d37de
+      internalID: 1037225655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -186,6 +249,9 @@ TextureImporter:
       hints_0: -1181633550
       hints_1: 1977082929
       hints_2: -1385925578
+      hints_3: -1796713575
+      hints_4: 885990047
+      hints_5: 1037225655
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
