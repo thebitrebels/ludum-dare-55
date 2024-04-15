@@ -26,11 +26,11 @@ public class Penguin : MonoBehaviour
     {
         foreach (var pos in tilemap.cellBounds.allPositionsWithin)
         {
-            Vector3Int gridPlace = new Vector3Int(pos.x, pos.y, pos.z);
-            if (tilemap.HasTile(gridPlace))
+            Vector3Int abovePos = new Vector3Int(pos.x, pos.y + 1, pos.z);
+            if (tilemap.HasTile(pos) && !tilemap.HasTile(abovePos))
             {
-                TileBase tile = tilemap.GetTile(gridPlace);
-                tilemap.SetTile(gridPlace, iceTile);
+                TileBase tile = tilemap.GetTile(pos);
+                tilemap.SetTile(pos, iceTile);
                 yield return new WaitForSeconds(0.2f);
             }
         }
