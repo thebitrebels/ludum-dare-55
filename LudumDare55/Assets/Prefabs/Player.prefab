@@ -67,8 +67,8 @@ MonoBehaviour:
   gravity: 3
   fallMultiplier: 4
   onGround: 1
-  groundLength: 1.1
-  colliderOffset: {x: 0.3, y: 0, z: 0}
+  groundLength: 0.02
+  colliderOffset: {x: 0.3, y: 1, z: 0}
 --- !u!61 &8457837641888998
 BoxCollider2D:
   m_ObjectHideFlags: 0
