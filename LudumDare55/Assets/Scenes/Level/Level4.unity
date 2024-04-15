@@ -272,6 +272,7 @@ GameObject:
   - component: {fileID: 240780842}
   - component: {fileID: 240780841}
   - component: {fileID: 240780843}
+  - component: {fileID: 240780844}
   m_Layer: 0
   m_Name: Water
   m_TagString: Water
@@ -510,6 +511,42 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.0443916, y: 3.159586}
   m_EdgeRadius: 0
+--- !u!19719996 &240780844
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240780839}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0
+  m_UseDelaunayMesh: 0
 --- !u!1 &247532551
 GameObject:
   m_ObjectHideFlags: 0
