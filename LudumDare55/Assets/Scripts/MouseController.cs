@@ -22,6 +22,7 @@ public class MouseController : MonoBehaviour
 
         if (activeSummoning != null)
         {
+            Debug.Log("intersects player: " + activeSummoning.IntersectsPlayer());
             if (Input.GetMouseButtonDown(1))
             {
                 activeSummoning = null;
