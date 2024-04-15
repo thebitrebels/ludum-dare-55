@@ -37,5 +37,7 @@ public class Penguin : MonoBehaviour
 
 
         tilemap.GetComponent<BoxCollider2D>().enabled = false;
+        tilemap.tag = "ground";
+        tilemap.gameObject.layer = LayerMask.NameToLayer("Ground");
     }
 }
