@@ -1,4 +1,5 @@
 
+using System;
 using UnityEngine;
 
 public class Pig : MonoBehaviour
@@ -10,7 +11,7 @@ public class Pig : MonoBehaviour
     private bool _isPlayerGrabbed;
     private PlayerController _playerController;
     private float _timerPushDelay;
-    
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         var player = other.GetComponent<PlayerController>();

@@ -3,14 +3,18 @@ using UnityEngine.Tilemaps;
 
 public class MouseController : MonoBehaviour
 {
+    
+    [Header("Cursors")]
     public Texture2D defaultCursor, clickableCursor, summoningCursor;
     public GameObject particleSystem;
-
+    public AudioClip summoningActiveSound;
     public SummoningBase activeSummoning;
 
     [Header("Overlay")]
     public Tilemap overlayTilemap;
     public Tilemap TileMap;
+    
+    private AudioSource _audioSource;
 
     private void Update()
     {
@@ -42,25 +46,33 @@ public class MouseController : MonoBehaviour
 
     private void Start()
     {
+        _audioSource = GetComponent<AudioSource>();
         Default();
     }
 
     public void Clickable()
     {
+        if (activeSummoning != null) return;
         Cursor.SetCursor(clickableCursor, Vector2.zero, CursorMode.Auto);
         particleSystem.gameObject.SetActive(false);
+        _audioSource.Stop();
     }
 
     public void Default()
     {
+        if (activeSummoning != null) return;
         Cursor.SetCursor(defaultCursor, Vector2.zero, CursorMode.Auto);
         particleSystem.gameObject.SetActive(false);
+        _audioSource.Stop();
     }
 
     public void Summoning()
     {
         Cursor.SetCursor(summoningCursor, Vector2.zero, CursorMode.Auto);
         particleSystem.gameObject.SetActive(true);
+        _audioSource.clip = summoningActiveSound;
+        _audioSource.loop = true;
+        _audioSource.Play();
     }
 
     public void SetActiveSummon(SummoningBase summon)

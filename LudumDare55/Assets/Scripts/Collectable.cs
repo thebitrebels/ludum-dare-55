@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -8,6 +9,7 @@ public class Collectable : MonoBehaviour
 
     public string key;
     public CollectableEvent onCollected;
+    private bool _collected;
     
     private void Start()
     {
@@ -17,11 +19,20 @@ public class Collectable : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider2D)
     {
+        if (_collected) return;
         if (collider2D.gameObject == _playerController.gameObject)
         {
             onCollected.Invoke(this);
-            Destroy(gameObject);
+            GetComponentInChildren<SpriteRenderer>().enabled = false;
+            _collected = true;
+            StartCoroutine(DestroyWithDelay());
         }
+    }
+    
+    IEnumerator DestroyWithDelay()
+    {
+        yield return new WaitForSeconds(4.5f);
+        Destroy(gameObject);
     }
 }
 [System.Serializable]

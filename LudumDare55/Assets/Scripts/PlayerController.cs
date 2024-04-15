@@ -3,6 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Spawn")] public AudioClip spawnSound;
+    
     [Header("Horizontal Movement")]
     public float movementSpeed = 32f;
     public Vector2 direction;
@@ -11,6 +13,8 @@ public class PlayerController : MonoBehaviour
     [Header("Vertical Movement")]
     public float jumpSpeed = 15f;
     public float jumpDelay = 0.25f;
+    public AudioClip jumpSound;
+    public AudioClip landingSound;
     private float _jumpTimer;
 
     [Header("Components")]
@@ -18,6 +22,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D _rigidbody2d;
     private Animator _animator;
     private SpriteRenderer _spriteRenderer;
+    private AudioSource _audioSource;
 
     [Header("Physics")]
     public float maxSpeed = 7f;
@@ -36,6 +41,8 @@ public class PlayerController : MonoBehaviour
         _rigidbody2d = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        _audioSource = GetComponent<AudioSource>();
+        _audioSource.PlayOneShot(spawnSound);
     }
 
     // Update is called once per frame
@@ -48,6 +55,7 @@ public class PlayerController : MonoBehaviour
         if (!wasOnGround && onGround)
         {
             // squeeze
+            _audioSource.PlayOneShot(landingSound);
         }
 
         if (Input.GetButtonDown("Jump"))
@@ -97,8 +105,7 @@ public class PlayerController : MonoBehaviour
         _rigidbody2d.velocity = new Vector2(_rigidbody2d.velocity.x, 0);
         _rigidbody2d.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);
         _jumpTimer = 0;
-
-        // squeeze
+        _audioSource.PlayOneShot(jumpSound);
     }
 
     private void ModifyPhysics()
