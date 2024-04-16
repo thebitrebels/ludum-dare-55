@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8354780820313812302}
   - component: {fileID: 5994031918717285950}
   - component: {fileID: 8243145347519899128}
+  - component: {fileID: 1784212632828832109}
   m_Layer: 0
   m_Name: Elephant
   m_TagString: Untagged
@@ -182,6 +183,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &1784212632828832109
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051800303510873046}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 51e336d6233ea6d46a6a64791d5b116d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7666223232003123822
 GameObject:
   m_ObjectHideFlags: 0

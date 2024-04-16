@@ -6,6 +6,7 @@ public class Pig : MonoBehaviour
 {
     public float pushStrength;
     public float pushDelay;
+    public AudioClip launchSound;
     public Vector3 offset;
 
     private bool _isPlayerGrabbed;
@@ -38,5 +39,7 @@ public class Pig : MonoBehaviour
         _isPlayerGrabbed = false;
         _timerPushDelay = 0f;
         _playerController.GetComponent<Rigidbody2D>().AddForce(Vector2.up * pushStrength, ForceMode2D.Impulse);
+        GetComponent<AudioSource>().PlayOneShot(launchSound);
+        StartCoroutine(_playerController.GetComponentInChildren<Camera>().gameObject.GetComponent<CameraShake>().Shake());
     }
 }

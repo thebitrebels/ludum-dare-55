@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d1514134bc4fbd41bb739b1b9a49231, type: 3}
   m_Name: Placeholder_Elephant_Tile
   m_EditorClassIdentifier: 
-  m_DefaultSprite: {fileID: -1367486442, guid: e0de7575eec8e7a4f8c8119122659228, type: 3}
+  m_DefaultSprite: {fileID: 669140181, guid: b50dd1212bef8784eaf581f773742272, type: 3}
   m_DefaultGameObject: {fileID: 0}
   m_DefaultColliderType: 1
   m_TilingRules: []

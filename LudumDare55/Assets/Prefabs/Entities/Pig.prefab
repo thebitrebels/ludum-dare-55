@@ -84,6 +84,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pushStrength: 32
   pushDelay: 1
+  launchSound: {fileID: 8300000, guid: c936631099484ac459c3a1dcfb1454f2, type: 3}
   offset: {x: 0, y: 1, z: 0}
 --- !u!82 &1005979245057295700
 AudioSource:
